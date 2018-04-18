@@ -1,4 +1,11 @@
-<h1> Edit <%= @song.name %> </h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Edit Song</title>
+  </head>
+  <body>
+    <h1> Edit <%= @song.name %> </h1>
 
 <form method="POST" action="/songs/<%= @song.slug %>">
   <input type="hidden" name="_method" value="PATCH">
@@ -11,3 +18,5 @@
   <%end%>
   <input type="submit" value="Save">
 </form>
+</body>
+</html>
